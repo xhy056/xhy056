@@ -1,0 +1,143 @@
+/* components/navigation/navigation.wxss */
+.header {
+    width: 100%;
+    height: 100rpx;
+    /* border: 2rpx solid black; */
+    display: flex;
+    position:fixed;
+    z-index: 999;
+}
+
+.header .header-top {
+    width: 100%;
+    height: 100rpx;
+    background-color: white;
+    display: flex;
+    z-index: 999;
+}
+
+.header .header-brand {
+    width: 70%;
+    height: 90%;
+    /* border: 2rpx solid black; */
+}
+
+.header .header-brand .image-logo {
+    width: 70%;
+    height: 80%;
+    margin-top: 10rpx;
+}
+
+.header .header-brand .image-year {
+    width: 20%;
+    height: 50%;
+    margin-left: 10rpx;
+}
+
+.header .header-login {
+    width: 28%;
+    height: 80%;
+    /* z-index: 999; */
+}
+
+.header .header-login .image-regster {
+    width: 100%;
+    height: 90%;
+    margin-top: 10rpx;
+}
+
+.carousel-text {
+    padding-top: 10rpx;
+    display: flex;
+    font-size: 40drpx;
+    /* z-index: 100; */
+}
+
+.carousel-text text {
+    margin-left: 20rpx;
+}
+
+/* 免费领取 */
+.act-banner {
+    width: 100%;
+    height: 100rpx;
+    margin-top: 100rpx;
+    position: fixed;
+    z-index: 998;
+}
+
+.act-banner image {
+    width: 100%;
+    height: 100%;
+}
+
+.act-banner .btn {
+    width: 160rpx;
+    height: 60rpx;
+    /* position: absolute; */
+    /* top: 110rpx; */
+    right: 10rpx;
+    font-size: 20rpx;
+    margin-top: 20rpx;
+    position: fixed;
+}
+
+/* 登录界面 */
+
+/* 蒙版 */
+.navigation-list .player-list-mask {
+    width: 750rpx;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+}
+
+.navigation-list .navigation-register {
+    width: 100%;
+    height: 880rpx;
+    margin-left: -750rpx;
+    /* border: 2rpx solid black; */
+    border-top-left-radius: 50rpx;
+    border-top-right-radius: 50rpx;
+    position: fixed;
+    /* z-index: 1; */
+    bottom: 0;
+    background-color: white;
+}
+
+.mode {
+    margin: 70rpx 0 ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.phone-box {
+    padding: 0 50rpx;
+}
+
+.group-input {
+    display: flex;
+    border-bottom: 2rpx solid pink;
+    margin: 80rpx 0;
+}
+.group-input-icon{
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+w .group-input input {
+    padding-left: 40rpx;
+    font-size: 35rpx;
+}
+
+.qr-box image {
+    width: 350rpx;
+    height: 350rpx;
+    margin: 200rpx;
+}
+

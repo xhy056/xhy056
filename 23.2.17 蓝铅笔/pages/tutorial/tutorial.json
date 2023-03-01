@@ -1,0 +1,8 @@
+{
+    "usingComponents": { 
+        "navigation":"../../components/navigation/navigation",
+        "series":"../../components/series/series",
+        "jiaochengNav":"../../components/jiaochengNav/jiaochengNav"
+
+    }
+}

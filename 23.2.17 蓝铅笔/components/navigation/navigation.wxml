@@ -1,0 +1,52 @@
+<!-- 注册登录 -->
+<view class="header">
+    <view class="header-top">
+        <!-- 2023 -->
+        <view class="header-brand">
+            <image class="image-logo" src="../../images/logo05.png" mode="" />
+            <image class="image-year" src="../../images/2023year.png" mode="" />
+        </view>
+        <!-- 上下轮播 -->
+        <swiper class="header-login" autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{vertical}}" wx:for="{{carousel}}" wx:key="idnex" bindtap="changeIsOpen">
+            <swiper-item>
+                <image class="image-regster" src="../../images/regster-reward_3.png" mode="" />
+            </swiper-item>
+            <swiper-item class="carousel-text">
+                <text>注册</text>
+                <text>登录</text>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 登录列表 -->
+    <view class="navigation-list" style="display:{{isOpen?'block':'none'}}">
+        <!-- 蒙板 -->
+        <view class="player-list-mask" bindtap="changeIsOpen"></view>
+        <!-- 上拉框 -->
+        <view class="navigation-register" style="bottom:{{isOpen?'0':'-622rpx'}}" bindtap="changeIsOpen">
+            <!-- 切换登录模式 -->
+            <view class="mode">
+                    <view value="phone">免密登录</view>
+                    <view value="qr">账号登录</view>
+            </view>
+            <!-- input -->
+            <view class="phone-box">
+                <view class="group-input">
+                    <image class="group-input-icon" src="../../images/shouji.png" mode=""/>
+                    <input type="text" id="phone" placeholder="请输入手机号码" model:value="{{phone}}" />
+                </view>
+                <view class="group-input">
+                    <image class="group-input-icon" src="../../images/xiaoxi.png" mode=""/>
+                    <input type="text" id="phone" placeholder="请输入验证码" type="password" model:value="{{password}}" />
+                </view>
+                <view>
+                    <button type="primary" bindtap="phoneLogin">登录/注册</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 免费领取 -->
+<view class="act-banner">
+    <image src="../../images/m-ht.png" mode="" />
+    <image class="btn" src="../../images/m-tb.png" mode="" />
+</view>

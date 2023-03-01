@@ -1,0 +1,30 @@
+<!--components/series/series.wxml-->
+<view class="view" wx:for="{{seriesList}}" wx:key="index">
+    <image src="https://ss.lanqb.com/{{item.posters.app}}" mode="" />
+    <view class="series-box">
+        <view class="series-box-top">
+            {{item.title}}
+        </view>
+        <view class="series-box-center">
+            <view>
+                {{item.profile.nickname}}
+            </view>
+            <view>
+                共1节
+            </view>
+        </view>
+        <view class="series-box-bottom">
+            <view>
+                {{item.id}}在学
+            </view>
+            <view class="series-box-bottom-right">
+                <view>
+                    {{item.production.origin_rmb_price}}
+                </view>
+                <view>
+                    分享半价学
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

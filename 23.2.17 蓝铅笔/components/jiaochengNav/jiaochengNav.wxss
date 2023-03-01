@@ -1,0 +1,22 @@
+/* components/jiaochengNav/jiaochengNav.wxss */
+.nav-box{
+    width: 100%;
+    height: 150rpx;
+    z-index: 999;
+    top: 200rpx;
+    position: relative;
+    background-color: white;
+    /* border: 2rpx solid black; */
+    line-height: 150rpx;
+    font-size: 40rpx;
+    position: fixed;
+}
+.scroll-view_H{
+    white-space: nowrap;
+}
+.scroll-view_H view{
+    display: inline-block;
+    width: 100rpx;
+    height: 150rpx;
+    margin-left: 18rpx;
+}

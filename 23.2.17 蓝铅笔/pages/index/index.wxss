@@ -1,0 +1,374 @@
+/**index.wxss**/
+.background-color {
+    background-color: #F4F4F4;
+}
+
+/* 轮播图 */
+.carouselTwo {
+    width: 100%;
+    height: 400rpx;
+    /* border: 2rpx solid black; */
+    display: flex;
+    flex-wrap: nowrap;
+    top: 190rpx;
+    position: relative;
+    /* z-index: ; */
+}
+
+.carouselTwo image {
+    width: 100%;
+    height: 100%;
+}
+
+/* 子菜单 */
+.submenu {
+    width: 100%;
+    height: 400rpx;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200rpx;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submenu .submenu-border {
+    width: 170rpx;
+    height: 180rpx;
+    /* border: 2rpx solid black; */
+    text-align: center;
+}
+
+.submenu .submenu-img {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.submenu .submenu-text {
+    font-size: 30rpx;
+}
+
+/* 大触直播 */
+.BigTouch {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    margin-top: 20rpx;
+    background-color: white;
+}
+
+.BigTouch-text-one {
+    line-height: 100rpx;
+    margin-left: 30rpx;
+}
+
+.BigTouch-text-two {
+    font-size: 30rpx;
+    color: gray;
+    margin-left: 400rpx;
+    line-height: 100rpx;
+}
+
+.BigTouch-liveStreaming {
+    width: 100%;
+    height: 1250rpx;
+    display: inline-block;
+    margin-top: 5rpx;
+    background-color: white;
+}
+
+.BigTouch-liveStreaming-king {
+    width: 90%;
+    height: 500rpx;
+    margin: 40rpx auto;
+    /* border: 2rpx solid black; */
+    box-shadow: 0 0 10rpx 2rpx rgb(202, 198, 198);
+    border-radius: 20rpx;
+}
+.BigTouch-liveStreaming-king video{
+    width: 90%;
+    height: 70%;
+    /* margin: 70rpx 30rpx; */
+}
+
+.BigTouch-liveStreaming-two {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.BigTouch-liveStreaming-two-liangyi {
+    width: 42%;
+    /* height: 400rpx; */
+    box-shadow: 0 0 10rpx 2rpx rgb(202, 198, 198);
+    border-radius: 20rpx;
+}
+
+.BigTouch-liveStreaming-two-gali {
+    width: 42%;
+    /* height: 400rpx; */
+    box-shadow: 0 0 10rpx 2rpx rgb(202, 198, 198);
+}
+
+.liangyi-title {
+    height: 20rpx;
+    margin: 10rpx 10rpx;
+    line-height: 20rpx;
+    vertical-align: baseline;
+}
+
+.liangyi-portrait {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+}
+
+.liangyi-introduction {
+    font-weight: bold;
+    font-size: 20prx;
+    margin: 10rpx 20rpx;
+}
+
+.liangyi-image {
+    width: 100%;
+    height: 250rpx;
+    border-radius: 20rpx;
+}
+
+.liangyi-time {
+    color: gray;
+}
+
+.liangyi-like {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.liangyi-like-title {
+    color: gray;
+}
+
+/* 热门教程 */
+.hot {
+    width: 100%;
+    /* height: 700rpx; */
+    background-color: white;
+    margin-top: 5rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hot-box {
+    width: 42%;
+    /* height: 400rpx; */
+    /* box-shadow: 0 0 10rpx 2rpx rgb(202, 198, 198); */
+    border-radius: 20rpx;
+}
+
+.hot-image {
+    width: 100%;
+    height: 250rpx;
+    border-radius: 20rpx;
+}
+
+/* 问答专区 */
+.qa-item {
+    width: 100%;
+    height: 700rpx;
+    background-color: white;
+    /* border: 2rpx solid black; 忘记示弱才会满身伤口*/
+    margin-top: 5rpx;
+    box-sizing: border-box;
+    padding: 50rpx 50rpx;
+}
+
+.qa-item .list16-item_inner {
+    width: 100%;
+    height: 100%;
+    /* border-bottom: 2rpx solid black; */
+    /* background-color: rgb(44, 39, 39); */
+}
+
+.qa-item .list16-item_inner .user-info {
+    display: flex;
+}
+
+.qa-item .list16-item_inner .user-info image {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+
+.qa-item .list16-item_inner .user-info view {
+    font-size: 40rpx;
+    line-height: 100rpx;
+    margin-left: 30rpx;
+}
+
+.qa-item .list16-item_inner .content {
+    height: 300rpx;
+
+}
+
+.qa-item .list16-item_inner .content .content-title {
+    display: flex;
+}
+
+.qa-item .list16-item_inner .content .content-title .content-title-wen {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 10rpx;
+    color: white;
+    background-color: #4DA6FF;
+    text-align: center;
+    line-height: 50rpx;
+    margin: 20rpx 10rpx;
+}
+
+.qa-item .list16-item_inner .content .content-title .content-title-zhen {
+    margin: 20rpx 0;
+    font-size: 35rpx;
+    font-weight: 500;
+}
+
+.qa-item .list16-item_inner .content .content-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qa-item .list16-item_inner .content .content-text view {
+    width: 80%;
+}
+
+.qa-item .list16-item_inner .content .content-text image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.qa-item .list16-item_inner .teacher-comment {
+    height: 200rpx;
+    background-color: #F7F7F7;
+    /* border: 2rpx solid black; */
+    border-radius: 10rpx;
+    /* margin-top: 0rpx; */
+}
+
+.qa-item .list16-item_inner .teacher-comment .content-title {
+    display: flex;
+}
+
+.qa-item .list16-item_inner .teacher-comment .content-title image {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    margin: 20rpx 20rpx;
+    /* padding: 20rpx 20rpx; */
+}
+
+.qa-item .list16-item_inner .teacher-comment .content-title .content-title-name {
+    padding: 20rpx 0;
+    line-height: 60rpx;
+}
+
+.qa-item .list16-item_inner .teacher-comment .content-title .content-title-caina {
+    /* padding: 20rpx 5rpx; */
+    width: 100rpx;
+    height: 40rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    font-size: 20rpx;
+    background-color: #FFDB66;
+    line-height: 40rpx;
+    margin: 30rpx 20rpx;
+}
+
+.qa-item .list16-item_inner .teacher-comment .content-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal; 
+}
+
+/* 素材下载 */
+.m-con {
+    width: 100%;
+    height: 170rpx;
+    background-color: white;
+    /* border: 2rpx solid black; 忘记示弱才会满身伤口*/
+    margin-top: 5rpx;
+    box-sizing: border-box;
+    padding-top: 20rpx;
+    display: flex;
+    justify-content: space-around;
+}
+
+.m-con .news-list-item {
+    width: 240rpx;
+    height: 130rpx;
+    /* border: 2rpx solid black; */
+}
+.m-con .news-list-item image{
+    width: 100%;
+    height: 100%;
+}
+.m-con .news-list-item-text{
+    width:400rpx ;
+}
+.m-con .news-list-item-text .title{
+    font-size: 27rpx;
+    font-weight: 600;
+}
+.m-con .news-list-item-text .time{
+    color: gray;
+    margin-top: 20rpx;
+}
+
+
+/* 页脚 */
+.m-about {
+    width: 100%;
+    height: 350rpx;
+    /* border: 2rpx solid black; */
+    text-align: center;
+}
+
+.m-about .about-a {
+    margin-top: 40rpx;
+}
+
+.m-about .about-a a {
+    color: #a4a4a4;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    margin-bottom: 2rpx;
+    padding: 0 20rpx;
+    border-left: 3rpx solid #a4a4a4;
+    border-right: 3rpx solid #a4a4a4;
+}
+
+.m-about .m-credible {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.m-about .m-credible image {
+    width: 120rpx;
+    height: 50rpx;
+    margin-top: 40rpx;
+}
+
+.m-about-p {
+    font-size: 20rpx;
+    color: gray;
+    margin-top: 40rpx;
+}
+
+.mouse-move {
+    /* color: black; */
+}

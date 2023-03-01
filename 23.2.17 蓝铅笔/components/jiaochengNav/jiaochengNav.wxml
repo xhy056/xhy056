@@ -1,0 +1,26 @@
+<!--components/jiaochengNav/jiaochengNav.wxml-->
+<view class="nav-box">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll">
+        <view class="">
+            最新
+        </view>
+        <view >
+            入门
+        </view>
+        <view>
+            进阶
+        </view>
+        <view>
+            免费
+        </view>
+        <view>
+            图文
+        </view>
+        <view>
+            兑换
+        </view>
+        <view>
+            专题
+        </view>
+    </scroll-view>
+</view>

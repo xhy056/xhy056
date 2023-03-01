@@ -1,0 +1,34 @@
+/* components/series/series.wxss */
+.view{
+    width: 100%;
+    height: 280rpx;
+    /* border: 2rpx solid black; */
+    display: flex;
+    top: 320rpx;
+    flex-wrap: nowrap;
+    position: relative;
+    padding-top: 30rpx;
+}
+.view image{
+    width:500rpx;
+    height: 250rpx;
+}
+.view .series-box{
+    width: 100%;
+    height: 250rpx;
+    /* border: 2rpx solid black; */
+   
+}
+.series-box-center{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.series-box-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.series-box-bottom-right{
+    display: flex;
+}

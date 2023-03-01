@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tutorial/tutorial",
+        "pages/network/network",
+        "pages/bigTouch/bigTouch",
+        "pages/mine/mine",
+        "pages/register/register"
+    ],
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./images/shouye-h.png",
+                "selectedIconPath": "./images/shouye.png"
+            },
+            {
+                "pagePath": "pages/tutorial/tutorial",
+                "text": "教程",
+                "iconPath": "./images/diannao-h.png",
+                "selectedIconPath": "./images/diannao.png"
+            },
+            {
+                "pagePath": "pages/network/network",
+                "text": "网校",
+                "iconPath": "./images/jishiben-h.png",
+                "selectedIconPath": "./images/jishiben.png"
+            },
+            {
+                "pagePath": "pages/bigTouch/bigTouch",
+                "text": "大触",
+                "iconPath": "./images/jishiben-h.png",
+                "selectedIconPath": "./images/jishiben.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "./images/shouye_1-h.png",
+                "selectedIconPath": "./images/shouye_1.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "蓝铅笔",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "requiredBackgroundModes": [
+        "audio"
+    ]
+}

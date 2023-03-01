@@ -1,0 +1,19 @@
+<!--pages/tutorial/tutorial.wxml-->
+<navigation></navigation>
+<jiaochengNav></jiaochengNav>
+<view class="tutorial">
+    <view class="tutorial-search">
+        <image src="../../images/sousuo.png" mode="" />
+        <input placeholder="绘画教程" type="text" />
+    </view>
+    <image class="tutorial-img" src="../../images/o_1f8mp9vnuchogchc1map1vgr7.png" mode="" />
+    <view>
+        <view style="display:inline-block;margin-left: 50rpx; padding-right: 50rpx;">
+            全部
+        </view>
+        <view class="tutorial-label" wx:for="{{groupList}}" wx:key="index">
+            {{item.name}}
+        </view>
+    </view>
+</view>
+<series seriesList="{{material}}"></series>

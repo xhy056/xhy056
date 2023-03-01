@@ -1,0 +1,189 @@
+<navigation></navigation>
+
+<view class="background-color">
+    <!-- 轮播图 -->
+    <swiper class="carouselTwo" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <swiper-item wx:for="{{carouselTwo}}" wx:key="index">
+            <image src="{{item}}" mode="" />
+        </swiper-item>
+    </swiper>
+
+    <!-- 子菜单 -->
+    <view class="submenu">
+        <view wx:for="{{submenu}}" wx:key="index" class="submenu-border">
+            <image class="submenu-img" src="{{item.imga}}" mode="" />
+            <view class="submenu-text">{{item.text}}</view>
+        </view>
+    </view>
+
+    <!-- 大触直播 -->
+    <view class="BigTouch">
+        <view class="BigTouch-text-one">
+            大触直播
+        </view>
+        <view class="BigTouch-text-two">
+            查看更多>
+        </view>
+    </view>
+    <!-- 大触直播 -->
+    <view class="BigTouch-liveStreaming">
+        <!-- king -->
+        <view class="BigTouch-liveStreaming-king" wx:if="{{index < 1 }}" wx:for="{{liangyi}}" wx:key="{index}">
+            <view style="display: flex; ">
+                    <image class="liangyi-portrait" src="https://ss.lanqb.com/{{item.user_profile.avatar}}" mode="" />
+                    <view class="liangyi-title">
+                        {{item.user_profile.nickname}}
+                    </view>
+                </view>
+            <video autoplay controls="controls" src="../../images/mov_bbb.mp4" />
+            <view class="liangyi-time">
+                    时间：{{item.begin_at}}
+                </view>
+        </view>
+        <!-- 两仪 -->
+        <view class="BigTouch-liveStreaming-two">
+            <view class="BigTouch-liveStreaming-two-liangyi" wx:if="{{index < 2 }}" wx:for="{{liangyi}}" wx:key="{index}">
+                <view style="display: flex; margin:20rpx 20rpx;">
+                    <image class="liangyi-portrait" src="https://ss.lanqb.com/{{item.user_profile.avatar}}" mode="" />
+                    <view class="liangyi-title">
+                        {{item.user_profile.nickname}}
+                    </view>
+                </view>
+                <view class="liangyi-introduction">
+                    {{item.title}}
+                </view>
+                <image class="liangyi-image" src="https://ss.lanqb.com/{{item.posters.app}}" mode="" />
+                <view class="liangyi-time">
+                    时间：{{item.begin_at}}
+                </view>
+                <view style="display: flex;">
+                    <image class="liangyi-like" src="../../images/aixin.png" mode="" />
+                    <view class="liangyi-like-title">
+                        {{item.statistic.purchases}}
+                    </view>
+                </view>
+            </view>
+
+        </view>
+    </view>
+    <!-- 热门教程 -->
+    <view class="BigTouch">
+        <view class="BigTouch-text-one">
+            热门教程
+        </view>
+        <view class="BigTouch-text-two">
+            查看更多>
+        </view>
+    </view>
+    <!-- 热门教程 -->
+    <view class="hot">
+        <view class="hot-box" wx:for="{{hot}}" wx:if="{{index < 4 }}">
+            <view class="hot-border">
+                <image class="hot-image" src="https://ss.lanqb.com/{{item.posters.mobile}}" mode="" />
+                <view class="hot-text">
+                    {{item.title}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 问答专区 -->
+    <view class="BigTouch">
+        <view class="BigTouch-text-one">
+            问答专区
+        </view>
+        <view class="BigTouch-text-two">
+            查看更多>
+        </view>
+    </view>
+    <!-- 问答专区 -->
+    <view class="qa-item" wx:if="{{index < 3 }}" wx:for="{{questions}}" wx:key="index">
+        <view class="list16-item_inner">
+            <view class="user-info">
+                <image src="{{item.user_avatar}}" mode="" />
+                <view>
+                    {{item.user_nickname}}
+                </view>
+            </view>
+            <view class="content">
+                <view class="content-title">
+                    <view class="content-title-wen">
+                        问
+                    </view>
+                    <view class="content-title-zhen">
+                        {{item.title}}
+                    </view>
+                </view>
+                <view class="content-text">
+                    <view>
+                        {{item.content}}
+                    </view>
+                    <image src="{{item.works}}" mode="" />
+                </view>
+            </view>
+            <view class="teacher-comment">
+                <view class="content-title">
+                    <image src="{{item.answer_user_avatar}}" mode="" />
+                    <view class="content-title-name">
+                        {{item.answer_user_nickname}}
+                    </view>
+                    <view class="content-title-caina">
+                        已采纳
+                    </view>
+                </view>
+                <view class="content-text">
+                    <view class="text">
+                        {{item.answer_content[0].value}}
+                    </view>
+                    <view class="chakan">
+                        APP查看
+                    </view>
+                </view>
+
+            </view>
+        </view>
+    </view>
+    <!-- 素材下载 -->
+    <view class="BigTouch">
+        <view class="BigTouch-text-one">
+            素材下载
+        </view>
+        <view class="BigTouch-text-two">
+            查看更多>
+        </view>
+    </view>
+    <!-- 素材下载 -->
+    <view class="m-con" wx:if="{{index < 3 }}" wx:for="{{material}}" wx:key="index">
+        <view class="news-list-item">
+            <image src="https://ss.lanqb.com/{{item.imgCover}}" mode="" />
+        </view>
+        <view class="news-list-item-text">
+            <view class="title">
+                {{item.title}}
+            </view>
+            <view class="time">
+                {{item.created_at}}
+            </view>
+        </view>
+    </view>
+
+    <!-- 页脚 -->
+    <view class="m-about">
+        <view class="about-a" href="">
+            <a class="mouse-move" href="">关于蓝铅笔</a>
+        </view>
+        <view class="m-credible">
+            <image src="../../images/footer-icon1_124x47.png" mode="" />
+            <image src="../../images/footer-icon5@2x.png" mode="" />
+            <image src="../../images/footer-icon2@2x.png" mode="" />
+            <image src="../../images/footer-icon3@2x.png" mode="" />
+            <image src="../../images/icon8.png" mode="" />
+        </view>
+        <view class="m-about-p">
+            Copyright © 2022杭州多技教育科技有限公司
+            <a class="mouse-move" href="">浙ICP备11056181号</a>
+        </view>
+        <view class="m-about-p">
+            <a class="mouse-move" href="">浙公网安备33010602000717号</a>
+        </view>
+    </view>
+</view>
